@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\C-HotelsExcelsior_Middelkerke.jpg" />
+    <None Include="wwwroot\images\covid_garanties.jpg" />
+    <None Include="wwwroot\images\DomeinWesthoek_Oostduinkerke.jpg" />
+    <None Include="wwwroot\images\garanties_header_1180x60_nl_0.jpg" />
+    <None Include="wwwroot\images\HotelEurope.jpg" />
+    <None Include="wwwroot\images\HotelLeValDePoix_St-Hubert.jpg" />
+    <None Include="wwwroot\images\HotelRadissonBluBalmoral_Spa.jpg" />
+    <None Include="wwwroot\images\ibisDeHaan_DeHaan.jpg" />
+    <None Include="wwwroot\images\laagsteprijs_garanties_180820_640x316_nl.jpg" />
+    <None Include="wwwroot\images\omruil_garanties.jpg" />
+    <None Include="wwwroot\images\repatriering_garanties.jpg" />
+    <None Include="wwwroot\images\star.jpg" />
+    <None Include="wwwroot\images\transparency_black_50p.png" />
+    <None Include="wwwroot\images\Tui.png" />
+    <None Include="wwwroot\images\TuiSmall.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vacation9.Domains\Vacation9.Domains.csproj" />
+    <ProjectReference Include="..\Vacation9.Services\Vacation9.Services.csproj" />
+  </ItemGroup>
+
+</Project>

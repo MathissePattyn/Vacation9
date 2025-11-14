@@ -1,0 +1,14 @@
+﻿@model List<Vacation9.ViewModels.HotelVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="indexCss">
+<h1 class="hoofdTitel">List vlaamse kust</h1>
+    <div class="containerTiles">
+        @foreach (var hotel in Model)
+        {
+            @await Html.PartialAsync("DisplayTemplates/_HotelTile", hotel)
+        }
+    </div>
+</div>
