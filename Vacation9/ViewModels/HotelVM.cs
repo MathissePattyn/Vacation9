@@ -9,5 +9,7 @@ namespace Vacation9.ViewModels
         public double Score { get; set; }
         public string? Benefit { get; set; }
         public string? Photo { get; set; }
+        public string? City { get; set; }
+        public CountryType Country { get; set; }
     }
 }

@@ -31,6 +31,8 @@ namespace Vacation9.Controllers
                         hotelVM.Stars = hotel.Stars;
                         hotelVM.Score = hotel.Score;
                         hotelVM.Benefit = hotel.Benefit;
+                        hotelVM.City = hotel.City;
+                        hotelVM.Country = hotel.Country;
                         HotelVMs.Add(hotelVM);
                     }
                     return View(HotelVMs);

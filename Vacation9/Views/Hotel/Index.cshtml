@@ -2,13 +2,25 @@
 
 @{
     ViewData["Title"] = "Index";
+
+    var type = Model.FirstOrDefault()?.Country;
+
+    string title = type switch
+    {
+        Vacation9.Domains.Entities.CountryType.Coast => "Lijst kust",
+        Vacation9.Domains.Entities.CountryType.Wallonia => "Lijst ardennen",
+        _ => "Lijst"
+    };
 }
+
 <div class="indexCss">
-<h1 class="hoofdTitel">List vlaamse kust</h1>
+
+<h1 class="hoofdTitel">@title</h1>
     <div class="containerTiles">
         @foreach (var hotel in Model)
-        {
+        { 
             @await Html.PartialAsync("DisplayTemplates/_HotelTile", hotel)
         }
     </div>
 </div>
+
